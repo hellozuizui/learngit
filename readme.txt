@@ -21,3 +21,6 @@ create git repository
 ******************
 edition management
 ******************
+git add <filename>					____add file to buffer
+git commit -m "noticement"			____push buffer file to workspace
+git push							____push workspace file to master
