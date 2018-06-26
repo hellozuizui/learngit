@@ -72,3 +72,15 @@ CMD:
 	the cmd will auto create a repo dir
 	
 
+******************
+branch management
+******************
+git checkout -b <branch_name>				____create new branch & switch to it
+	= git branch <branch_name>				____create new branch
+	+ git checkout <branch_name>			____switch to branch
+git branch									____show branch, the curent branch is tag with *
+git branch -d <branch_name>					____delete branch
+git merge <branch_name>						____merge branch
+
+
+do conflict test
