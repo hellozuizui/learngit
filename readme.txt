@@ -24,8 +24,7 @@ version management
 git add <filename>					____add file to buffer
 git commit -m "noticement"			____push buffer file to workspace
 git push							____push workspace file to master
-git log								____view git operation log & edition info
+git log								____view git version info & commit id
 git log --pretty=oneline			____oneline display of "git log"
-git reset HEAD^						____go back to last version
-git reset HEAD^^					____go back to last two version
-git reset HEAD~10					____go back to last ten version
+git reset --hard <commit id>		____go to corresponding version
+git reflog							____display all your operation of version, expect "push".You can find forward version which has been gone back
