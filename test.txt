@@ -6,3 +6,9 @@ modify_2
 
 
 git commit
+
+modify for add
+
+checkout back to buffer OK
+
+
