@@ -14,3 +14,5 @@ checkout back to buffer OK
 checkout back to workspace OK
 
 git commit
+
+modify for add
