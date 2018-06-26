@@ -19,8 +19,13 @@ create git repository
 
 
 ******************
-edition management
+version management
 ******************
 git add <filename>					____add file to buffer
 git commit -m "noticement"			____push buffer file to workspace
 git push							____push workspace file to master
+git log								____view git operation log & edition info
+git log --pretty=oneline			____oneline display of "git log"
+git reset HEAD^						____go back to last version
+git reset HEAD^^					____go back to last two version
+git reset HEAD~10					____go back to last ten version
