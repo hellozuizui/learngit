@@ -140,7 +140,7 @@ git tag <tag_name>							____tag HEAD with <tag_name>
 git tag										____show all tag info
 git tag <tag_name> <version_number>			____tag <version_number> with <tag_name>
 git tag -a <tag_name> -m "tag_description"	____tag <version_number> with <tag_name> & <tag_description>
-git tag <tag_name>							____show tag description of <tag_name>
+git show <tag_name>							____show tag description of <tag_name>
 git tag -d <tag_name>						____delete tag
 git push origin <tag_name>					____push <tag_name> to remote
 git push origin --tags						____push all tags to remote
