@@ -74,7 +74,7 @@ repository clone
 CMD:
 	git clone git@github.com:<github_name>/<repo_name>.git
 	the cmd will auto create a repo dir
-	
+master	
 
 ******************
 branch management
