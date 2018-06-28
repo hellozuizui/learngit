@@ -88,7 +88,7 @@ git merge <branch_name>						____merge branch: curent branch & <branch_name>, if
 git merge --no-ff -m "merge with no-ff" dev	____merge current branch to master without "fast forward" mode：keep branch history in log
 
 
-conflict test 1:1
+conflict test 1:2
 conflict test 2:1
 
 
