@@ -92,6 +92,7 @@ conflict test 1:1
 conflict test 2:1
 
 
+
 ******************
 General branch management strategies
 ******************
