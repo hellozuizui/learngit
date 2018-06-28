@@ -74,7 +74,7 @@ repository clone
 CMD:
 	git clone git@github.com:<github_name>/<repo_name>.git
 	the cmd will auto create a repo dir
-master	
+	
 
 ******************
 branch management
@@ -90,7 +90,15 @@ git merge --no-ff -m "merge with no-ff" dev	____merge current branch to master w
 
 conflict test 1:1_2
 conflict test 2:2_2
-dev
+******************
+about conflict
+******************
+conflict:
+	1__two branch medified same file at same place or close place
+no conflict:
+	1__two branch medified same file at dif place, and nor close to each other
+	2__two branch medified dif files
+
 
 
 ******************
