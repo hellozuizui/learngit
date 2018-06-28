@@ -118,6 +118,7 @@ __________________________________master for main branch to release
 break and recovery
 ******************
 git stash									____stash files, even those not add
-git stash apply								____recover from stash
+git stash apply								____recover from last stash
 git stash drop								____remove stash
 gti stash pop								____recover from stash and remove stash
+
