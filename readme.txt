@@ -100,7 +100,6 @@ no conflict:
 	2__two branch medified dif files
 
 
-
 ******************
 General branch management strategies
 ******************
