@@ -89,3 +89,4 @@ git merge --no-ff -m "merge with no-ff" dev	____merge current branch to master w
 
 
 do conflict test
+conflict test:2
