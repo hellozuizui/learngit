@@ -27,6 +27,10 @@ git commit -m "noticement"			____push buffer file to workspace
 git push							____push workspace file to master
 git log								____view git version info & commit id
 git log --pretty=oneline			____oneline display of "git log"
+git log --graph --pretty=oneline --abbrev-commit	____get log with branch message display by graphics
+
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+									____alise CMD(git log), and config log colorful
 git reflog							____display all your operation of version, expect "push".You can find forward version which has been gone back
 
 ******************
@@ -81,6 +85,7 @@ git checkout -b <branch_name>				____create new branch & switch to it
 git branch									____show branch, the curent branch is tag with *
 git branch -d <branch_name>					____delete branch
 git merge <branch_name>						____merge branch
+git merge --no-ff -m "merge with no-ff" dev	____merge current branch to master without "fast forward" mode：keep branch history in log
 
 
 do conflict test
