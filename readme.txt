@@ -85,12 +85,22 @@ branch management
 git checkout -b <branch_name>				____create new branch & switch to it
 	= git branch <branch_name>				____create new branch
 	+ git checkout <branch_name>			____switch to branch
+git checkout -b origin/<branch_name>		____create new origin branch at local, and switch to it
 git branch									____show branch, the curent branch is tag with *
 git branch -d <branch_name>					____delete branch
 git merge <branch_name>						____merge branch: curent branch & <branch_name>, if branch merge, info will auto display at raw files which are conflicted
 git merge --no-ff -m "merge with no-ff" dev	____merge current branch to master without "fast forward" mode：keep branch history in log
+
+
+******************
+remote management
+******************
 git push									____(Not recommended)useful only when you just have one branch local
 git push origin <branch_name>				____push local branch to origin
+git remote									____show remote info
+git remote -v								____show more detal of remote
+git pull									____show remote push info
+git rebase									____rebase branch to one
 
 
 conflict test 1:1_2
@@ -120,5 +130,15 @@ break and recovery
 git stash									____stash files, even those not add; stash is a FILO not FIFO.
 git stash apply								____recover from last stash
 git stash drop								____remove stash
-gti stash pop								____recover from stash and remove stash
+git stash pop								____recover from stash and remove stash
+
+
+******************
+tag
+******************
+git tag <tag_name>							____tag HEAD with <tag_name>
+git tag										____show all tag info
+git tag <tag_name> <version_number>			____tag <version_number> with <tag_name>
+git tag -a <tag_name> -m "tag_description"	____tag <version_number> with <tag_name> & <tag_description>
+git tag <tag_name>							____show tag description of <tag_name>
 
