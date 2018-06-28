@@ -1,6 +1,9 @@
 This is my first git file.
 
-learning note
+***************************************
+***			git learning note		***
+***************************************
+
 
 ******************
 git setup
@@ -21,9 +24,9 @@ create git repository
 ******************
 version management
 ******************
-git add <filename>					____add file to buffer
-git rm <filename>					____remove file to buffer
-git commit -m "noticement"			____push buffer file to workspace
+git add <filename>					____add file to stage
+git rm <filename>					____remove file to stage
+git commit -m "noticement"			____push stage file to workspace
 git push							____push workspace file to master
 git log								____view git version info & commit id
 git log --pretty=oneline			____oneline display of "git log"
@@ -36,13 +39,13 @@ git reflog							____display all your operation of version, expect "push".You ca
 ******************
 version go back
 ******************
-git reset HEAD <filename>			____undo buffer file, it will not change actually file, just clean buffer file which is not visible
+git reset HEAD <filename>			____undo stage file, it will not change actually file, just clean stage file which is not visible
 git reset --hard HEAD				____go to current version, commit & before any change
 git reset --hard HEAD~				____go to last version
 git reset --hard HEAD~~				____go to last 2 version
 git reset --hard HEAD~10			____go to last 10 version
 git reset --hard <commit id>		____go to corresponding commit id version
-git checkout -- <filename>			____undo modify, all modify back to buffer or workspace
+git checkout -- <filename>			____undo modify, all modify back to stage or workspace
 
 
 ******************
@@ -86,6 +89,8 @@ git branch									____show branch, the curent branch is tag with *
 git branch -d <branch_name>					____delete branch
 git merge <branch_name>						____merge branch: curent branch & <branch_name>, if branch merge, info will auto display at raw files which are conflicted
 git merge --no-ff -m "merge with no-ff" dev	____merge current branch to master without "fast forward" mode：keep branch history in log
+git push									____(Not recommended)useful only when you just have one branch local
+git push origin <branch_name>				____push local branch to origin
 
 
 conflict test 1:1_2
@@ -112,4 +117,7 @@ __________________________________master for main branch to release
 ******************
 break and recovery
 ******************
-git stash									____stash 
+git stash									____stash files, even those not add
+git stash apply								____recover from stash
+git stash drop								____remove stash
+gti stash pop								____recover from stash and remove stash
