@@ -141,4 +141,29 @@ git tag										____show all tag info
 git tag <tag_name> <version_number>			____tag <version_number> with <tag_name>
 git tag -a <tag_name> -m "tag_description"	____tag <version_number> with <tag_name> & <tag_description>
 git tag <tag_name>							____show tag description of <tag_name>
+git tag -d <tag_name>						____delete tag
+git push origin <tag_name>					____push <tag_name> to remote
+git push origin --tags						____push all tags to remote
+git push origin :refs/tags/<tag_name>		____delete remote <tag_name>
 
+
+******************
+ignore
+******************
+1__create a file: .gitignore, and write the <file_name> in it, you will not add <file_name>
+2__this use to ignore some trash file/mid process file/secret file
+
+CMD:
+	git add -f <file_name>					____force to add ignore file
+
+
+******************
+alise
+******************
+git config (--global) alise.<alisement> <raw_CMD>	____alise <raw_CMD> to <alisement>, (--global) means useful for curent uesr, if no, CMD just useful for curent project
+	
+	
+******************
+build a private server
+******************	
+TBD
