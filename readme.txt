@@ -84,10 +84,24 @@ git checkout -b <branch_name>				____create new branch & switch to it
 	+ git checkout <branch_name>			____switch to branch
 git branch									____show branch, the curent branch is tag with *
 git branch -d <branch_name>					____delete branch
-git merge <branch_name>						____merge branch
+git merge <branch_name>						____merge branch: curent branch & <branch_name>, if branch merge, info will auto display at raw files which are conflicted
 git merge --no-ff -m "merge with no-ff" dev	____merge current branch to master without "fast forward" mode：keep branch history in log
 
 
-do conflict test
-conflict test:2
+conflict test 1:1
+conflict test 2:1
 
+
+******************
+General branch management strategies
+******************
+__________________________________master for main branch to release
+	|_____|_________|_________|___dev for beta branch to test
+	  | |______|__|______|________<developer> for private branch to developer
+	  |________|_________|________<feature> for actual feature branch downstream of <developer> or team
+
+	  
+******************
+break and recovery
+******************
+git stash									____stash 
